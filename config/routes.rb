@@ -1,4 +1,17 @@
 Zurbf1::Application.routes.draw do
+  get "welcome/index"
+
+  get "welcome/blog"
+
+  get "welcome/about"
+
+  get "welcome/contact"
+
+  get "welcome/tos"
+
+  get "welcome/guestbook"
+
+  root :to => 'welcome#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
