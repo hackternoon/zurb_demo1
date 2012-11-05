@@ -9,7 +9,7 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    #links
+    #links.two.columns
       #links_title Zurb Demo
       %img(src='/assets/zurb_demo.jpeg')
       %hr/
@@ -20,10 +20,11 @@
       %a(href='/welcome/guestbook') Guestbook
       %a(href='/welcome/tos') Terms of Service
       %hr/
-    #maincontent
+    #maincontent.ten.columns
       =yield
     :css
       #links { background-color: #ddd; display: inline; float: left; padding: 9px; margin: 5px; }
       #links a { display: block; padding-bottom: 9px;}
       #links img { width: 150px; }
       #maincontent { width: 900px; background-color: #eee; float: left; padding: 9px; margin: 5px; }
+
