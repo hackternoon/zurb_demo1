@@ -9,22 +9,24 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    #links.two.columns
-      #links_title Zurb Demo
-      %img(src='/assets/zurb_demo.jpeg')
-      %hr/
-      %a(href='/welcome/index') Home
-      %a(href='/welcome/about') About
-      %a(href='/welcome/blog') Blog
-      %a(href='/welcome/contact') Contact
-      %a(href='/welcome/guestbook') Guestbook
-      %a(href='/welcome/tos') Terms of Service
-      %hr/
-    #maincontent.ten.columns
-      =yield
+    #row1.row
+      #links.two.columns
+        #links_title Zurb Demo
+        %img(src='/assets/zurb_demo.jpeg')
+        %hr/
+        %a(href='/welcome/index') Home
+        %a(href='/welcome/about') About
+        %a(href='/welcome/blog') Blog
+        %a(href='/welcome/contact') Contact
+        %a(href='/welcome/guestbook') Guestbook
+        %a(href='/welcome/tos') Terms of Service
+        %hr/
+      #maincontent.ten.columns
+        =yield
     :css
       #links { background-color: #ddd; display: inline; float: left; padding: 9px; margin: 5px; }
       #links a { display: block; padding-bottom: 9px;}
       #links img { width: 150px; }
-      #maincontent { width: 900px; background-color: #eee; float: left; padding: 9px; margin: 5px; }
+      #maincontent { width: 600px; background-color: #eee; float: left; padding: 9px; margin: 5px; }
+      #row1 { width: 900px; }
 
