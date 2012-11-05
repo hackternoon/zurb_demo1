@@ -4,8 +4,6 @@ source 'http://rubygems.org'
 # run this shell command:
 # bundle install --binstubs
 
-# The point of this demo:
-gem "zurb-foundation", "3.2.0"
 
 # Other gems I like:
 gem 'haml','3.2.0.beta.3'
@@ -23,6 +21,9 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
+  # The point of this demo:
+  gem 'zurb-foundation','3.2.0'
+  gem 'compass-rails','1.0.3'
 end
 
 gem 'jquery-rails'
